@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/mystyles.css">
+    <style>
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: menu;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: right;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'menu main main right right';
+            grid-gap: 10px;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+
+        a.one:link {
+            color: #000000;
+        }
+
+        a.one:visited {
+            color: #0000ff;
+        }
+
+        a.one:hover {
+            color: #ff0000;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <div class="item3">
+
+            <body>
+                <h1>My site </h1>
+                <hr size="5" color="green" />
+                <br>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin id tellus.
+                <br>Nam accumsan tincidunt quam. Cum sociis natoque penatibus et magnis
+                <br>dis parturient montes, nascetur ridiculus mus. Donec sed est ut felis
+                <br>scelerisque semper. Phasellus pretium hendrerit risus. Morbi malesuada.
+                <br>Duis porttitor tincidunt neque. Phasellus eget velit a mi aliquam
+                <br>molestie. Vestibulum lacinia viverra nisl. Praesent rutrum varius justo.
+                <br>Mauris feugiat.
+
+
+                <h1>Image In Text </h1>
+                <hr size="5" color="green" />
+                <img src="image\Apple.jpg" alt="Apple" width="20%" height="20%" style="float: left;">
+                <br>Lorem ipsum dolor sit amet,
+                <br>consectetuer adipiscing elit. Proin id
+                <br>tellus, Nam accumsan tincidunt quam.
+                <br>Cum sociis natoque penatibus et magnis
+                <br>dis parturient montes, nascetur ridiculus
+                <br>mus. Donec sed est ut felis scelerisque
+                <br>semper.
+                
+                
+                <br clear="all">
+                
+                
+
+                <h1>Time Table </h1>
+                <hr size="5" color="green" />
+                <div>
+                    <table width="500" height="100">
+                        <tr bgcolor="BBBBBB " >
+                            <th>  </th>
+                            <th>  </th>
+                            <th> </th>
+                        </tr>
+                        <tr bgcolor="CCCCCC " >
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr bgcolor="DDDDDD " >
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr bgcolor="EEEEEE " >
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </table>
+                </div>
+
+                
+
+                <h1>Form Example </h1>
+                <hr size="5" color="green" />
+                <br> 
+                <form action="/my-handling-form-page" method="post">
+                    <div>
+                        <label for="name">Your Name: &nbsp;</label>
+                        <input type="text" id="name" name="user_name">
+                    </div>
+                    <br />
+                    <div>
+                        <label for="mail">Your E-mail:</label>
+                        <input type="email" id="mail" name="user_mail">
+                    </div>
+                    <br />
+                    <table  >
+                        <label for="msg">Comment: &nbsp; &nbsp; &nbsp; </label>
+                        <textarea  id="msg" name="user_message" ></textarea>
+                        <p >
+                            &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;<input type ="submit"  value="Send Message" >
+                        </p>
+                        <br />
+                    </table>
+                </form </body>
+        </div>
+        <div class="item4">
+
+            <body>
+                <table bgcolor="#dcdcdc" width="40%" hidgth="200%">
+                    <br /><br />
+                    &nbsp;
+                    <tr>
+                        <th style="border:2px solid #c5c5c5;">Main Sidebar </th>
+                    </tr>
+                    <tr>
+                        <td style="border:2px solid #c5c5c5;">
+                            <br /> This is an example of a
+                            <br /> paragraph in the sidebar
+                            <br /> followed by an example of
+                            <br /> sidebar links.
+
+                            <ul>
+                                <li>
+                                    <p><b><a class="one" href="default.asp" target="_blank">More free Templates</a></b></p>
+                                </li>
+                                <li>
+                                    <p><b><a class="one" href="default.asp" target="_blank">Freelance Web Designer</a></b></p>
+                                </li>
+                                <li>
+                                    <p><b><a class="one" href="default.asp" target="_blank">Some Example Links</a></b></p>
+                                </li>
+                                <li>
+                                    <p><b><a class="one" href="default.asp" target="_blank">Donec sed est ut felis</a></b></p>
+                                </li>
+                            </ul>
+                            <br />This is a form in the sidebar.
+                            <p >
+                                <input type="text" id="text" name="text">  &nbsp;<input type ="submit"  value="Search" >
+                            </p>
+                            <br />Images that would br good 
+                            <br />for acvertment or a sample
+                            <br />gallerry;
+                            
+                        </td>
+                    </tr>
+                    <tr style="background-color:#ffffff;">
+                        <td style="border:2px solid #c5c5c5;">
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+            </body>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
