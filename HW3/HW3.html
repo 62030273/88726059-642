@@ -10,8 +10,8 @@
 
 <body>
     <h4>เกมส์ทายตัวอักษร</h4>
-    <input type="text" id="num">
-    <input type="button" value="start" onClick="start()">
+    <input type="text" id="word">
+    <input type="button" value="Go" onClick="start()">
     <div id="hist"></div>
     <div id="result"></div>
     <script>
@@ -34,17 +34,18 @@
                     if (n.slice(i, i + 1) == random_vocabulary.slice(i, i + 1)) {
                         OUTPUT = n.slice(i, i + 1);
 
-                    } else { OUTPUT = n.slice(i, i + 1) + "No" }
+                    } else { OUTPUT = n.slice(i, i + 1) + "ไม่ใช่" }
 
-                } else { OUTPUT = n.slice(i, i + 1) + "99" }
-
+                } else { OUTPUT = n.slice(i, i + 1) + "ไม่มี" }
 
                 h.innerHTML += " | " + OUTPUT + "| ";
             } h.innerHTML += "<br>";
 
-
             result = document.getElementById("result");
             now = document.getElementById('word').value;
+
+            if (now == random_vocabulary) { result.innerHTML = "<p> ถูกต้องแล้วค้าบบบบ </p>"; }
+            else { result.innerHTML = "<p>ยังไม่ใช่</p>"; }
 
         }
 
