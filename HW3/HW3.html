@@ -10,22 +10,16 @@
 <body>
     <h4>เกมส์ทายตัวอักษร</h4>
 <input type="text" id="num">
-<input type="button" value="Guess" onClick="guess()">
+<input type="button" value="Guess" onClick="start()">
 <div id="hist"></div>
 <div id="result"></div>
 <script>
-  rnd = Math.floor(Math.random() * 100);
+    const fix_vocabulary = ["VENOM", "TRIED"];
+    const random_vocabulary = fix_vocabulary[Math.floor(Math.random() * fix_vocabulary.length)];
     floor ()
-  document.getElementById('num').focus();
-  function guess() {
-    n = document.getElementById('num').value;
-    h = document.getElementById('hist');
-    h.innerHTML +=n+ "," ;
-    result = document.getElementById('result');
-    if (n < rnd) result.innerHTML = "<p>น้อยไป</p>";
-    if (n > rnd) result.innerHTML = "<p>มากไป </p>";
-    if (n == rnd) result.innerHTML = "<p>ถูกต้องนะคร้าบ </p>";
-    document.getElementByld('num').select();
+  document.getElementById('world').focus();
+  function start() {
+
   }
                            
                            
